@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +28,28 @@
 </head>
 
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <h1>Payoo</h1>
+    <div class="logo w-[200px] mx-auto pt-32">
+        <img src="./assets/Logo-full.png" alt="">
+    </div>
+
+    <div class="form pt-10 ">
+             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-neutral font-bold">Mobile Number</label>
+          <input id="input-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200" placeholder="Enter your 11 digit number" value="01234567890"/>
+
+          <br>
+          <label class="label text-neutral font-bold">4 digit pin</label>
+          <input id="input-pin" type="password" maxlength="4" class="input rounded-full bg-base-200" placeholder="enter 4 digit pin" />
+          <div></div>
+          <button id="login-btn" class="btn btn-primary  mt-4 rounded-full">Login</button>
+        </fieldset>
+      </div>
+    </div>
+        </div>
+
+        <!-- js link -->
+         <script src="./scripts/login.js"></script>
 </body>
 </html>
