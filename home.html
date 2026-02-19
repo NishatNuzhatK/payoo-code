@@ -104,6 +104,44 @@
 
 </section>
 
+
+<!-- add moeny form -->
+ <section id="add-money" class="w-11/12 mx-auto py-5">
+    <h2 class="text-xl font-bold mb-5">Add money</h2>
+    <div class="card bg-base-100 w-full   shadow rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+
+            <label class="label text-neutral font-bold">select bank</label>
+            <select id="add-money-bank" class="select w-full bg-base-200 rounded-full ">
+  <option disabled selected>select a bank</option>
+  <option value="DBBl">DBBl</option>
+  <option value="IBBl">IBBl</option>
+  <option value="city">city bank</option>
+</select>
+
+<br>
+          <label class="label text-neutral font-bold">bank account Number</label>
+          <input id="add-money-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 w-full" placeholder="Enter bank 11 digit number" value="01234567890"/>
+
+          <br>
+          <label class="label text-neutral font-bold">Amount to add </label>
+          <input id="add-money-amount" type="number" class="input rounded-full bg-base-200 w-full" placeholder="Enter amount to add" />
+
+          <br>
+          <label class="label text-neutral font-bold">4 digit pin</label>
+          <input id="add-money-pin" type="password" maxlength="4" class="input rounded-full bg-base-200 w-full" placeholder="enter 4 digit pin" />
+          <div></div>
+          <button id="add-money-btn" class="btn btn-primary  mt-4 rounded-full">Add Money</button>
+        </fieldset>
+      </div>
+    </div>
+
+
+</section>
+
+<!-- cashout form -->
+
 <section id="cashout" class="w-11/12 mx-auto py-5">
     <h2 class="text-xl font-bold mb-5">Cashout</h2>
 
@@ -128,6 +166,11 @@
 </section>
 
 
+
+
+<script src="./scripts/machine.js"></script>
+<script src="./scripts/addMoney.js"></script>
 <script src="./scripts/cashout.js"></script>
+
 </body>
 </html>
